@@ -1,0 +1,6 @@
+<script>
+  self.addEventListener('push', function(event) { 
+    var obj = event.data.json(); 
+    port.postMessage(obj);
+  });
+</script>
